@@ -42,7 +42,7 @@ class Candidates:
         :return: возвращает фото и данные в нужном формате
         """
         if int(input_id) == int(self.ident):
-            return self.get_candy_info()
+            return f"\nself.get_candy_info()\n"
 
     def chek_candy_skill(self, input_skill):
         """

@@ -30,13 +30,13 @@ def load_candidates_names(path):
     Функция загружает из файла JSON список имена кандидатов
     """
     _candidates = load_candidates_from_json(path)
-    name_list = []
+    name_ = ""
     for _c in _candidates:
-        name_list.append(_c.get_candy_name())
-    return name_list
+        name_ += _c.get_candy_name()
+    return name_
 
 
-def get_candidate(path, candidate_id):
+def get_candidate_by_id(path, candidate_id):
     """
     Функция загружает из файла список сущностей класса Candidates
      и возвращает данные кандидата по ID
@@ -80,3 +80,4 @@ def get_candidates_by_skill(path, skill_name):
         if _c.check_candy_skill(skill_name):
             candy_with_skill += _c.check_candy_skill(skill_name)
     return candy_with_skill
+
