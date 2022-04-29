@@ -35,7 +35,7 @@ class Candidates:
         """
         return f"\n<img src={self.pictures}>\n"
 
-    def chek_candy_from_id(self, input_id):
+    def chek_candy_by_id(self, input_id):
         """
         Метод проверяет вхождение ID и при наличии ID формирует фото и данные кандитата
         :param input_id: Входящий ID
