@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя работа 11 </title>
+    <style>
+h1 {color: blue}
+h3 {color: blue}
+h4 {color: blue}
+p  {color: red}
+body { font-family: sans-serif; background: #eee; }
+</style>
+</head>
+<body>
+<h3>Найдено со скиллом {{count_candidates}}</h3>
+{% for candidate in candidates_with_skill %}
+<h4> {{candidate.name}} </h4>
+<p>{{candidate.skills}}</p>
+{%endfor%}
+<p><a href="/">К списку</a></p>
+</body>
+</html>
