@@ -14,7 +14,7 @@ body { font-family: sans-serif; background: #eee; }
 <body>
 <h3>Найдено со скиллом {{count_candidates}}</h3>
 {% for candidate in candidates_with_skill %}
-<h4> {{candidate.name}} </h4>
+<h4><a href="/candidate/{{candidate.ident}}">{{candidate.name}}</a></h4>
 <p>{{candidate.skills}}</p>
 {%endfor%}
 <p><a href="/">К списку</a></p>

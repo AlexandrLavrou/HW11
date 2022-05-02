@@ -14,7 +14,7 @@ body { font-family: sans-serif; background: #eee; }
 <body>
 <h3>Найдено кандидатов {{candidates_with_name}}</h3>
 {% for candidate in candidates_name %}
-<h4> {{candidate.name}} </h4>
+<h4><a href="/candidate/{{candidate.ident}}">{{candidate.name}}</a></h4>
 {%endfor%}
 <p><a href="/">К списку</a></p>
 </body>
